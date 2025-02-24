@@ -26,7 +26,7 @@ def index():
             earnings = float(earnings) * 0.75
             hourly_rate = earnings / diff if diff > 0 else 0
 
-            result = f"{diff:.5f} ({hours}ч {minutes}мин)"
+            result = f"{hours}ч {minutes}мин"
             hourly_rate = f"{hourly_rate:.2f} в час"
 
         except ValueError:
